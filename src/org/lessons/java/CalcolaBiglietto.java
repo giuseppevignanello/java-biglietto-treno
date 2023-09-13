@@ -21,9 +21,9 @@ public class CalcolaBiglietto {
 		int userAge = sc.nextInt(); 
 		
 		if( userAge < 18 ) {
-			userPrice = userPrice - ((userPrice / 100) * 20); 
+			userPrice = userPrice - (userPrice * 0.20); 
 		} else if (userAge > 65) {
-			userPrice = userPrice - ((userPrice / 100) * 40);
+			userPrice = userPrice - (userPrice * 0.40);
 		}		
 		
 		System.out.println("Il prezzo del biglietto è: €" + String.format("%.02f", userPrice));
